@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>AireNetwork Prueba</title>
+
+    <!-- JQUERY-->
+    <script src="jquery/jquery.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+    <!-- SWEETALERT -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- CUSTOM STYLES -->
+    <style>
+        #msg_procesando,
+        #datos {
+            display: none;
+        }
+
+        #botones {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Diego Maroto - Prueba acceso</h2>
+        <p>Instrucciones:</p>
+        <ul>
+            <li>Esta solución funciona sobre servidor web en php5/7 y mysqli.</li>
+            <li>Rellenar los accesos al <b>ftp</b> en el fichero <i>datosacceso.php.sample</i> .</li>
+            <li>Se ha de crear la base de datos y las tablas antes de empezar.</li>
+            <ul>
+                <li>
+                    <i>Favor de mirar el fichero init.sql</i>
+                </li>
+            </ul>
+            <li>Los botones están en orden de cómo se debería ejecutar la applicación</li>
+            <ul>
+                <li>Primero se descargan los ficheros, este script sólo almacena los ficheros en el directorio local.</li>
+                <li>Actualizar las tablas inserta en la base de datos el contenido de los ficheros.</li>
+                <li>Tratar datos calcula lo necesario, lo almacena en la base de datos y los devuelve en listado json.</li>
+                <li>Refrescar datos muestra la tabla con los últimos datos que se han calculado.</li>
+            </ul>
+        </ul>
+        <p>
+            <div id="msg_procesando" class="alert alert-info" role="alert">Procesando...</div>
+        </p>
+        <div class="well">
+            <p>
+                <button class="btn btn-primary" id="d_ficheros">Descargar ficheros</button>
+            </p>
+            <p>
+                <button class="btn btn-primary" id="actualizartablas">Actualizar tablas a tratar</button>
+            </p>
+            <p>
+                <button class="btn btn-primary" id="tratardatos">Tratar datos</button>
+            </p>
+            <p>
+                <button class="btn btn-primary" id="mostrardatos">Refrescar datos</button>
+            </p>
+        </div>
+
+        <div class="panel panel-default" id="datos">
+            <!-- Default panel contents -->
+            <div class="panel-heading">Medias simples y consumo por teléfono
+                <span class="label label-info" id="telefonos_info"
+                data-toggle="tooltip" data-placement="top"
+                title="Cantidad de teléfonos en la lista"></span>
+            </div>
+
+            <!-- Table -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Teléfono</th>
+                        <th>Media Segundos</th>
+                        <th>Media Mb</th>
+                        <th>Total Gb</th>
+                        <th>Consumo</th>
+                    </tr>
+                </thead>
+                <tbody id="datos_tablebody">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        function alerta(titulo, msg, icono) {
+            swal({
+                title: titulo,
+                text: msg,
+                icon: icono,
+                button: "Aceptar",
+            });
+        }
+        var telefonos = null;
+        function fetchSomething(url) {
+            $("#msg_procesando").slideDown()
+            fetch(url)
+                .then(function (resp) { return resp.json() })
+                .then(function (resp) {
+                    if (resp.result == "OK") {
+                        alerta("Correcto", resp.result + " en: " +
+                            parseFloat(resp.time).toFixed(5) + " s", "success")
+                        if (resp.telefonos)
+                            telefonos = resp.telefonos
+                    } else {
+                        alerta("Error", resp.result + " en: " +
+                            parseFloat(resp.time).toFixed(5) + " s", "error")
+                    }
+                    $("#msg_procesando").slideUp()
+                })
+                .catch(function (err) {
+                    alerta("ERROR", "Error en: " + err, "error")
+                    $("#msg_procesando").slideUp()
+                });
+        }
+        $("#d_ficheros").click(function () {
+            fetchSomething("descargarFicheros.php")
+        })
+        $("#actualizartablas").click(function () {
+            fetchSomething("actualizarTablas.php")
+        })
+        $("#tratardatos").click(function () {
+            fetchSomething("tratarDatos.php")
+        })
+        $("#mostrardatos").click(function () {
+            $("#datos").slideUp();
+            $("#datos_tablebody").html("");
+            if (telefonos !== null) {
+                for (var i of telefonos) {
+                    var row = "<tr><td>" +
+                        i.numero +
+                        "</td><td>" +
+                        (i.mediaDiariaSec).toFixed(5) +
+                        "</td><td>" +
+                        (i.mediaDiariaMb).toFixed(5) +
+                        "</td><td>" +
+                        (i.totalMb/1000).toFixed(5) +
+                        "</td><td>" +
+                        (i.consumo).toFixed(5) +
+                        "</td></tr>"
+                    $("#datos_tablebody").append(row)
+                }
+            }
+            $("#telefonos_info").html("#" + telefonos.length)
+            $("#datos").slideDown();
+        })
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+</body>
+
+</html>

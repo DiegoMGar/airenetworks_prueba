@@ -1,0 +1,8 @@
+<?php
+/**
+ * Favor de rellenar este fichero y quitarle la extensión .sample
+ * para el buen funcionamiento de la aplicación
+ */
+$ip = "0.0.0.0";
+$user = "usuario";
+$password = "contrasena";

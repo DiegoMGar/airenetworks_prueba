@@ -1,0 +1,342 @@
+{
+    "time": 0.0016820430755615,
+    "result": "OK",
+    "telefonos": {
+        "471471520": {
+            "numero": "471471520",
+            "mediaDiariaSec": 100.33333333333,
+            "mediaDiariaMb": 700.66666666667,
+            "totalMb": 2102,
+            "precioGb": 9.8,
+            "consumo": 20.5996
+        },
+        "471330521": {
+            "numero": "471330521",
+            "mediaDiariaSec": 90,
+            "mediaDiariaMb": 665.66666666667,
+            "totalMb": 1997,
+            "precioGb": 9.8,
+            "consumo": 19.5706
+        },
+        "471180222": {
+            "numero": "471180222",
+            "mediaDiariaSec": 119.66666666667,
+            "mediaDiariaMb": 630.66666666667,
+            "totalMb": 1892,
+            "precioGb": 9.8,
+            "consumo": 18.5416
+        },
+        "471104823": {
+            "numero": "471104823",
+            "mediaDiariaSec": 376.33333333333,
+            "mediaDiariaMb": 595.66666666667,
+            "totalMb": 1787,
+            "precioGb": 9.8,
+            "consumo": 17.5126
+        },
+        "471180224": {
+            "numero": "471180224",
+            "mediaDiariaSec": 477.66666666667,
+            "mediaDiariaMb": 545.33333333333,
+            "totalMb": 1636,
+            "precioGb": 9.8,
+            "consumo": 16.0328
+        },
+        "471104825": {
+            "numero": "471104825",
+            "mediaDiariaSec": 693.66666666667,
+            "mediaDiariaMb": 693.66666666667,
+            "totalMb": 2081,
+            "precioGb": 9.8,
+            "consumo": 20.3938
+        },
+        "471180226": {
+            "numero": "471180226",
+            "mediaDiariaSec": 236.33333333333,
+            "mediaDiariaMb": 658.66666666667,
+            "totalMb": 1976,
+            "precioGb": 9.8,
+            "consumo": 19.3648
+        },
+        "471104827": {
+            "numero": "471104827",
+            "mediaDiariaSec": 198.33333333333,
+            "mediaDiariaMb": 623.66666666667,
+            "totalMb": 1871,
+            "precioGb": 9.8,
+            "consumo": 18.3358
+        },
+        "471104829": {
+            "numero": "471104829",
+            "mediaDiariaSec": 176,
+            "mediaDiariaMb": 588.66666666667,
+            "totalMb": 1766,
+            "precioGb": 9.8,
+            "consumo": 17.3068
+        },
+        "471303728": {
+            "numero": "471303728",
+            "mediaDiariaSec": 553.66666666667,
+            "mediaDiariaMb": 553.66666666667,
+            "totalMb": 1661,
+            "precioGb": 9.8,
+            "consumo": 16.2778
+        },
+        "471104830": {
+            "numero": "471104830",
+            "mediaDiariaSec": 584.66666666667,
+            "mediaDiariaMb": 584.66666666667,
+            "totalMb": 1754,
+            "precioGb": 9.8,
+            "consumo": 17.1892
+        },
+        "471104831": {
+            "numero": "471104831",
+            "mediaDiariaSec": 137.33333333333,
+            "mediaDiariaMb": 516.33333333333,
+            "totalMb": 1549,
+            "precioGb": 9.8,
+            "consumo": 15.1802
+        },
+        "471180232": {
+            "numero": "471180232",
+            "mediaDiariaSec": 214,
+            "mediaDiariaMb": 573.66666666667,
+            "totalMb": 1721,
+            "precioGb": 9.8,
+            "consumo": 16.8658
+        },
+        "471104833": {
+            "numero": "471104833",
+            "mediaDiariaSec": 189.66666666667,
+            "mediaDiariaMb": 538.66666666667,
+            "totalMb": 1616,
+            "precioGb": 9.8,
+            "consumo": 15.8368
+        },
+        "471104834": {
+            "numero": "471104834",
+            "mediaDiariaSec": 223.66666666667,
+            "mediaDiariaMb": 503.66666666667,
+            "totalMb": 1511,
+            "precioGb": 9.8,
+            "consumo": 14.8078
+        },
+        "471104835": {
+            "numero": "471104835",
+            "mediaDiariaSec": 468.66666666667,
+            "mediaDiariaMb": 468.66666666667,
+            "totalMb": 1406,
+            "precioGb": 9.8,
+            "consumo": 13.7788
+        },
+        "471104836": {
+            "numero": "471104836",
+            "mediaDiariaSec": 433.66666666667,
+            "mediaDiariaMb": 433.66666666667,
+            "totalMb": 1301,
+            "precioGb": 9.8,
+            "consumo": 12.7498
+        },
+        "471180237": {
+            "numero": "471180237",
+            "mediaDiariaSec": 89.666666666667,
+            "mediaDiariaMb": 398.66666666667,
+            "totalMb": 1196,
+            "precioGb": 9.8,
+            "consumo": 11.7208
+        },
+        "471104838": {
+            "numero": "471104838",
+            "mediaDiariaSec": 74,
+            "mediaDiariaMb": 363.66666666667,
+            "totalMb": 1091,
+            "precioGb": 9.8,
+            "consumo": 10.6918
+        },
+        "471104839": {
+            "numero": "471104839",
+            "mediaDiariaSec": 35,
+            "mediaDiariaMb": 314,
+            "totalMb": 942,
+            "precioGb": 9.8,
+            "consumo": 9.2316
+        },
+        "471104840": {
+            "numero": "471104840",
+            "mediaDiariaSec": 83.666666666667,
+            "mediaDiariaMb": 293.66666666667,
+            "totalMb": 881,
+            "precioGb": 9.8,
+            "consumo": 8.6338
+        },
+        "471104841": {
+            "numero": "471104841",
+            "mediaDiariaSec": 915.66666666667,
+            "mediaDiariaMb": 1163,
+            "totalMb": 3489,
+            "precioGb": 9.8,
+            "consumo": 34.1922
+        },
+        "471180242": {
+            "numero": "471180242",
+            "mediaDiariaSec": 792.33333333333,
+            "mediaDiariaMb": 1042.6666666667,
+            "totalMb": 3128,
+            "precioGb": 9.8,
+            "consumo": 30.6544
+        },
+        "471104843": {
+            "numero": "471104843",
+            "mediaDiariaSec": 96,
+            "mediaDiariaMb": 1007.6666666667,
+            "totalMb": 3023,
+            "precioGb": 9.8,
+            "consumo": 29.6254
+        },
+        "471180255": {
+            "numero": "471180255",
+            "mediaDiariaSec": 71.333333333333,
+            "mediaDiariaMb": 972.66666666667,
+            "totalMb": 2918,
+            "precioGb": 9.8,
+            "consumo": 28.5964
+        },
+        "471180256": {
+            "numero": "471180256",
+            "mediaDiariaSec": 55.666666666667,
+            "mediaDiariaMb": 937.66666666667,
+            "totalMb": 2813,
+            "precioGb": 9.8,
+            "consumo": 27.5674
+        },
+        "471104858": {
+            "numero": "471104858",
+            "mediaDiariaSec": 119.33333333333,
+            "mediaDiariaMb": 909,
+            "totalMb": 2727,
+            "precioGb": 9.8,
+            "consumo": 26.7246
+        },
+        "471180259": {
+            "numero": "471180259",
+            "mediaDiariaSec": 177.66666666667,
+            "mediaDiariaMb": 898.33333333333,
+            "totalMb": 2695,
+            "precioGb": 9.8,
+            "consumo": 26.411
+        },
+        "471104860": {
+            "numero": "471104860",
+            "mediaDiariaSec": 285,
+            "mediaDiariaMb": 877.33333333333,
+            "totalMb": 2632,
+            "precioGb": 9.8,
+            "consumo": 25.7936
+        },
+        "471104861": {
+            "numero": "471104861",
+            "mediaDiariaSec": 93,
+            "mediaDiariaMb": 839.33333333333,
+            "totalMb": 2518,
+            "precioGb": 9.8,
+            "consumo": 24.6764
+        },
+        "471104862": {
+            "numero": "471104862",
+            "mediaDiariaSec": 144.33333333333,
+            "mediaDiariaMb": 893.66666666667,
+            "totalMb": 2681,
+            "precioGb": 9.8,
+            "consumo": 26.2738
+        },
+        "471104863": {
+            "numero": "471104863",
+            "mediaDiariaSec": 122,
+            "mediaDiariaMb": 858.66666666667,
+            "totalMb": 2576,
+            "precioGb": 9.8,
+            "consumo": 25.2448
+        },
+        "471180265": {
+            "numero": "471180265",
+            "mediaDiariaSec": 113,
+            "mediaDiariaMb": 823.66666666667,
+            "totalMb": 2471,
+            "precioGb": 9.8,
+            "consumo": 24.2158
+        },
+        "471104866": {
+            "numero": "471104866",
+            "mediaDiariaSec": 83,
+            "mediaDiariaMb": 788.66666666667,
+            "totalMb": 2366,
+            "precioGb": 9.8,
+            "consumo": 23.1868
+        },
+        "471180268": {
+            "numero": "471180268",
+            "mediaDiariaSec": 653.66666666667,
+            "mediaDiariaMb": 753.66666666667,
+            "totalMb": 2261,
+            "precioGb": 9.8,
+            "consumo": 22.1578
+        },
+        "471180269": {
+            "numero": "471180269",
+            "mediaDiariaSec": 619.66666666667,
+            "mediaDiariaMb": 718.66666666667,
+            "totalMb": 2156,
+            "precioGb": 9.8,
+            "consumo": 21.1288
+        },
+        "471180270": {
+            "numero": "471180270",
+            "mediaDiariaSec": 588.66666666667,
+            "mediaDiariaMb": 668.33333333333,
+            "totalMb": 2005,
+            "precioGb": 9.8,
+            "consumo": 19.649
+        },
+        "471180272": {
+            "numero": "471180272",
+            "mediaDiariaSec": 62.333333333333,
+            "mediaDiariaMb": 697,
+            "totalMb": 2091,
+            "precioGb": 9.8,
+            "consumo": 20.4918
+        },
+        "471180274": {
+            "numero": "471180274",
+            "mediaDiariaSec": 128,
+            "mediaDiariaMb": 674.33333333333,
+            "totalMb": 2023,
+            "precioGb": 9.8,
+            "consumo": 19.8254
+        },
+        "471180275": {
+            "numero": "471180275",
+            "mediaDiariaSec": 80.666666666667,
+            "mediaDiariaMb": 706.33333333333,
+            "totalMb": 2119,
+            "precioGb": 9.8,
+            "consumo": 20.7662
+        },
+        "471104877": {
+            "numero": "471104877",
+            "mediaDiariaSec": 133.33333333333,
+            "mediaDiariaMb": 671.33333333333,
+            "totalMb": 2014,
+            "precioGb": 9.8,
+            "consumo": 19.7372
+        },
+        "471104879": {
+            "numero": "471104879",
+            "mediaDiariaSec": 562,
+            "mediaDiariaMb": 636.33333333333,
+            "totalMb": 1909,
+            "precioGb": 9.8,
+            "consumo": 18.7082
+        }
+    }
+}
